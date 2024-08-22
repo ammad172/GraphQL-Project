@@ -1,4 +1,6 @@
-﻿namespace GraphQL_Project.Query_class
+﻿using GraphQL_Project.DBContext;
+
+namespace GraphQL_Project.Query_class
 {
     public class Query
     {
@@ -15,11 +17,15 @@
 
         Author author = new Author() { Name = "Adnan" };
         public IEnumerable<Book> GetBooks() => new List<Book>() {
-       
+
 
             new Book {Title = "Idun" , Author = author},
             new Book {Title = "Tippla" , Author = author},
 
             };
+
+
+        public IQueryable<Customer> GetAdventureWorks(AdventureWorksLt2022Context context) =>
+            context.Customers;
     }
 }
