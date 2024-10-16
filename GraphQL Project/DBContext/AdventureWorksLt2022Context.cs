@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GraphQL_Project.DBContext;
 
-public partial class AdventureWorksLt2022Context : DbContext
+public partial class AdventureWorksLt2022Context : Microsoft.EntityFrameworkCore.DbContext
 {
     public AdventureWorksLt2022Context()
     {

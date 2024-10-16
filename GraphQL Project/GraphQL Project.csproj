@@ -8,18 +8,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Schema_graphql.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Schema_graphql.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.5.1" />
-    <PackageReference Include="HotChocolate" Version="13.9.11" />
-    <PackageReference Include="HotChocolate.Abstractions" Version="13.9.11" />
-    <PackageReference Include="HotChocolate.AspNetCore" Version="13.9.11" />
-    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.9.11" />
-    <PackageReference Include="HotChocolate.Fetching" Version="13.9.11" />
-    <PackageReference Include="HotChocolate.Language" Version="13.9.11" />
+    <PackageReference Include="HotChocolate" Version="13.9.14" />
+    <PackageReference Include="HotChocolate.Abstractions" Version="13.9.14" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.9.14" />
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.9.14" />
+    <PackageReference Include="HotChocolate.Fetching" Version="13.9.14" />
+    <PackageReference Include="HotChocolate.Language" Version="13.9.14" />
     <PackageReference Include="HotChocolate.Server" Version="10.5.5" />
-    <PackageReference Include="HotChocolate.Subscriptions" Version="13.9.11" />
-    <PackageReference Include="HotChocolate.Types" Version="13.9.11" />
-    <PackageReference Include="HotChocolate.Utilities" Version="13.9.11" />
-    <PackageReference Include="HotChocolate.Utilities.DependencyInjection" Version="13.9.11" />
+    <PackageReference Include="HotChocolate.Subscriptions" Version="13.9.14" />
+    <PackageReference Include="HotChocolate.Types" Version="13.9.14" />
+    <PackageReference Include="HotChocolate.Utilities" Version="13.9.14" />
+    <PackageReference Include="HotChocolate.Utilities.DependencyInjection" Version="13.9.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
